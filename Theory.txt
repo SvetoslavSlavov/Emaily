@@ -8,3 +8,20 @@ Server on machine on port -> port door looking for trafic
 Node and Express on port 5000
 
 Express -> Route Handlers of to responde to incoming requests
+
+Create index.js -> root file of our project
+
+Using common js module (const express = require('express');)
+because nodejs runtime only understands them.
+
+System implemented in node js for requiring a shared code
+between different files. Common js modules.
+We will use it on node side of things.
+
+Module System ES2015 modules node js does not have support for
+for it. (import express from 'express';).
+We will use it on React side of things.
+
+const app = express(); -> set up configuration that are going
+to listen for incomming request that are routed between node and express.
+All route handlers will be registered with app object.

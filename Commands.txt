@@ -5,3 +5,13 @@ cd server
 > npm init
 (enter ....)
 // Generated a package.json file witch is use for the center hub of our project
+// dependencies
+// Install Express
+> npm install --save express
+// Look in package.json file (only on mac or linux command)
+> cat pachage.json
+// Run the project
+> node index.js
+// In browser
+> localhost:5000
+// To json look better find a browser plugin
