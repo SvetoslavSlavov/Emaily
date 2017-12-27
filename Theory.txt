@@ -25,3 +25,28 @@ We will use it on React side of things.
 const app = express(); -> set up configuration that are going
 to listen for incomming request that are routed between node and express.
 All route handlers will be registered with app object.
+
+Express server
+
+app.get('/', (req, res) => {
+    res.send({ hi: 'there' });
+});
+
+app -> Express App to register this route handler with
+get -> watch for incoming request with this method
+'/' -> watch for requests trying to access '/'.(localhost:5000/)
+req -> Object representing the incoming request (request)
+res -> Object representing the outgoing response (response)
+res.send({ hi: 'there' }) -> immediately send some JSON 
+back to who ever made this reqest
+
+The request Wants to...
+     get -> Get info
+     post -> Send info
+app, put -> Update all the properties of something
+     delete -> Delete something
+     patch -> Update one or two properties of something
+
+app.listen(5000);
+Instruct express to tell node that it wants to listen for incoming
+trafic on port 5000
