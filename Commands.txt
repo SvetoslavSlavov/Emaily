@@ -1,0 +1,7 @@
+// Create a new directory
+> mkdir server
+cd server
+// Create a new project
+> npm init
+(enter ....)
+// Generated a package.json file witch is use for the center hub of our project

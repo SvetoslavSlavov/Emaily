@@ -1,0 +1,10 @@
+Node -> Javascript runtime used to execute
+code outside of the browser
+Express -> Library that runs in Node runtime.
+Has helpers to make dealing with HTTP trafic
+easier. (Everything in this library can be done in node only.)
+
+Server on machine on port -> port door looking for trafic
+Node and Express on port 5000
+
+Express -> Route Handlers of to responde to incoming requests
