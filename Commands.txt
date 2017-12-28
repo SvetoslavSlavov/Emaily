@@ -55,3 +55,11 @@ heroku -v
 
 // Heroku logs error message
 > heroku logs
+
+-----Deploy after first time----
+> git status
+> git add .
+> git commit -m "change greeting"
+> git push heroku master
+> heroku logs
+> heroku open
