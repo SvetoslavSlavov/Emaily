@@ -15,3 +15,43 @@ cd server
 // In browser
 > localhost:5000
 // To json look better find a browser plugin
+// If i forget .gitignore file (node_modules)
+> git rm -r --cached node_modules
+> git commit -m 'Remove the now ignored directory node_modules'
+> git push origin master
+
+// Check the git version
+> git --version
+
+// Initializing gitignore
+> git init
+
+// Adding to repository
+> git add .
+
+// Commit
+> git commit -m "initial commit"
+
+// Install Heroku CLI using brew(if not install see how to)
+> brew install heroku/brew/heroku
+
+// Version of Heroku
+heroku -v
+
+// Heroku login
+> heroku login
+
+// Heroku create
+> heroku create
+
+// Add remote repository to our current repository
+> git remote add heroku https://git.heroku.com/rocky-meadow-73339.git
+
+// Push the master branch to the heroku repository
+> git push heroku master
+
+// Heroku open to run the app
+> heroku open
+
+// Heroku logs error message
+> heroku logs

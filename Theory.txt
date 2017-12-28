@@ -74,3 +74,23 @@ to start our server running
 4.Create .gitignore file -> We don't want to incude dependencies,
 Heroku will do that for us.
 
+First time Deploy
+1.Create Heroku account
+2.Commit our codebase to git
+3.Install Heroku CLI and Create App
+4.Deploy App with Git
+5.Heroku deploys project
+
+Subsequent Deploy
+1.Commit codebase with git
+2.Deploy App with Git
+
+Heroku CLI
+Search in google
+(Heroku Command Line Interface)
+
+Heroku Links after creating the app
+First link when we want to see the project
+in the browser.
+Second link deployment targer. Git repository
+that we can push out local server to.
