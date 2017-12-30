@@ -170,3 +170,21 @@ Hey i want to authenticate my users with google
 
 passport.use -> generic register, i want you to now that there is 
 a new strategy available make use of it
+
+Enable GoogleAuth API
+
+client id and client secret from google
+Sign Up with google API
+
+https://console.developers.google.com/
+
+On Projects -> + sign -> create new one -> emaily-dev
+Click on the project -> select the new one
+Enable API -> Search -> Google+ API -> Click -> Enable
+Create credentials
+Credentials -> OAuth client id -> Configure coscent screen
+Product name shown to users -> emaily-dev
+Web application -> Authorized JavaScript origins -> http://localhost:5000
+                -> Authorized redirect URIs -> http://localhost:5000/*
+Pop up -> client id and client secret
+                
