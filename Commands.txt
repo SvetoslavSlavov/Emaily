@@ -63,3 +63,6 @@ heroku -v
 > git push heroku master
 > heroku logs
 > heroku open
+
+----------Install Passport---------
+> npm install --save passport passport-google-oauth20

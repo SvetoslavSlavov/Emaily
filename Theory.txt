@@ -94,3 +94,79 @@ First link when we want to see the project
 in the browser.
 Second link deployment targer. Git repository
 that we can push out local server to.
+
+----------Google OAuth-----------
+Google OAuth -> server side feauture
+Sign in with Google 
+Google OAuth Flow
+
+Client
+User click
+'Login'
+
+Direct to localhost:5000/auth/google
+
+Server
+Forward user's
+request to Google
+
+google.com/auth?appid=123
+
+Google
+Ask user if they grant
+permission
+User grant permission
+
+direct to localhost:5000/auth/google/callback?code=456
+
+Server
+Put user on hold, take
+the 'code' from the URL
+Send request to google 
+with 'code' included
+
+Google
+Google sees 'code' in URL,
+replies with details about
+the user
+
+Server
+Get user details,
+create new record in database
+Set user ID in cookie 
+for this user
+
+Kick user back to localhost:3000
+
+Client
+Logged in!
+I need some resource from the API
+Cookie automatically included
+
+Server
+Ah, this request has a 
+cookie with user id
+equal to 123.
+
+PasspordJS
+(OAuth Flow) automate some parts
+of the oauth set up.
+Installing two different librayies.
+Passport Library Component
+passport - General helpers for handling
+auth in Express apps
+passport strategy - Helpers for authenticating
+with one very specific method (email/password, Google, Facebook, etc)
+
+When you go to PasspordJS search and search for
+google the result documentation say you should use
+passport-google-oauth1 or passport-google-oauth20
+20(2.0)
+
+passport.use(new GoogleStrategy());
+
+new GoogleStrategy create a new instance of GoogleStrategy
+Hey i want to authenticate my users with google
+
+passport.use -> generic register, i want you to now that there is 
+a new strategy available make use of it
