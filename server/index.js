@@ -18,6 +18,15 @@ passport.use(
     }
   )
 );
+/* internal identifiar by google asking
+google to give us information about profile and email
+*/
+app.get(
+  "/auth/google",
+  passport.authenticate("google", {
+    scope: ["profile", "email"]
+  })
+);
 
 // clientID 328377180571-tgqhuhqfnfmiri6elnb7gma738t5f3dp.apps.googleusercontent.com
 // clientSecret 0OPFQr4SsSyJsQJqSdeApD4y
