@@ -202,4 +202,13 @@ module.exports = {
     "",
   googleClientSecret: ""
 };
-Add the file name to .gitignore (keys.js)                
+Add the file name to .gitignore (keys.js)
+
+add to index.js route to keys and add it to passport
+const keys = require("./config/keys");
+passport.use(
+  new GoogleStrategy({
+    clientID: keys.googleClientID,
+    clientSecret: keys.googleClientSecret
+  })
+);
