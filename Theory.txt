@@ -187,4 +187,19 @@ Product name shown to users -> emaily-dev
 Web application -> Authorized JavaScript origins -> http://localhost:5000
                 -> Authorized redirect URIs -> http://localhost:5000/*
 Pop up -> client id and client secret
-                
+
+----------------------Security API Keys------------------------
+ClientID - Public token - we can share this with the public
+clientSecret - Private token - we don't want anoyone to see this!
+
+index.js -> config/keys.js -> Are we doing dev or prod? -> 
+prod -> Use env variables
+dev -> congig/dev.js <- Don't commit this!!!
+
+Create a folder config with keys.js file with modules
+module.exports = {
+  googleClientID:
+    "",
+  googleClientSecret: ""
+};
+Add the file name to .gitignore (keys.js)                
